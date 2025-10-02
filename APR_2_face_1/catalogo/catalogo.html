@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Pastelería Artesanal</title>
+  <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+                  <img src="img/Imagen de WhatsApp 2025-10-01 a las 20.44.59_65d43f6a.jpg" alt="30px" width="50px">
+                 </div>
+    <ul>
+      <li><a href="../Principal_Pasteleria/Principal_Pasteleria.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="../conctatos_pasteleria/Conctato_Pasteleria.html">Contacto</a></li>
+      <li><a href="../carro/carro.html">🧺 <span id="carrito-count" class="carrito-count">0</span></a></li>
+      <li><a href="../mi cuenta/mi-cuenta.html">👤</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección Catálogo -->
+  <section class="catalogo">
+    <h2>Nuestro Catálogo</h2>
+    <p>Descubre nuestras deliciosas creaciones</p>
+    
+    <div class="productos-grid">
+      <!-- Producto 1 -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80" alt="Pasta de Chocolate Premium">
+        </div>
+        <div class="producto-info">
+          <h3>Pasta de Chocolate Premium</h3>
+          <p class="producto-descripcion">Delicioso pasta de chocolate con tres capas y frosting de crema</p>
+          <div class="producto-precio">$80</div>
+          <span class="producto-categoria">pasteles</span>
+          
+          <div class="cantidad-controls">
+            <button class="btn-cantidad" data-action="decrement">-</button>
+            <span class="cantidad">1</span>
+            <button class="btn-cantidad" data-action="increment">+</button>
+          </div>
+          
+          <button class="btn-agregar" data-producto='{"nombre":"Pasta de Chocolate Premium","precio":80,"categoria":"pasteles","tipo":"pastel"}'>
+            Agregar a carrito
+          </button>
+        </div>
+      </div>
+      
+      <!-- Producto 2 -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Cupcakes Coloridos">
+        </div>
+        <div class="producto-info">
+          <h3>Cupcakes Coloridos (6 piezas)</h3>
+          <p class="producto-descripcion">Set de 6 cupcakes con frosting de colores y decoraciones únicas</p>
+          <div class="producto-precio">$20</div>
+          <span class="producto-categoria">cupcakes</span>
+          
+          <div class="cantidad-controls">
+            <button class="btn-cantidad" data-action="decrement">-</button>
+            <span class="cantidad">1</span>
+            <button class="btn-cantidad" data-action="increment">+</button>
+          </div>
+          
+          <button class="btn-agregar" data-producto='{"nombre":"Cupcakes Coloridos (6 piezas)","precio":20,"categoria":"cupcakes","tipo":"cupcakes"}'>
+            Agregar a carrito
+          </button>
+        </div>
+      </div>
+      
+      <!-- Producto 3 -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Waffles">
+        </div>
+        <div class="producto-info">
+          <h3>Waffles Deliciosos</h3>
+          <p class="producto-descripcion">Deliciosos waffles (4 Piezas)</p>
+          <div class="producto-precio">$7</div>
+          <span class="producto-categoria">waffles</span>
+          
+          <div class="cantidad-controls">
+            <button class="btn-cantidad" data-action="decrement">-</button>
+            <span class="cantidad">1</span>
+            <button class="btn-cantidad" data-action="increment">+</button>
+          </div>
+          
+          <button class="btn-agregar" data-producto='{"nombre":"Waffles Deliciosos","precio":7,"categoria":"waffles","tipo":"waffles"}'>
+            Agregar a carrito
+          </button>
+        </div>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Cupcakes de Frutas">
+        </div>
+        <div class="producto-info">
+          <h3>Cupcakes de Frutas Frescas</h3>
+          <p class="producto-descripcion">Delicioso Cupcakes con frutas de temporada y crema batida</p>
+          <div class="producto-precio">$80</div>
+          <span class="producto-categoria">Cupcakes</span>
+          
+          <div class="cantidad-controls">
+            <button class="btn-cantidad" data-action="decrement">-</button>
+            <span class="cantidad">1</span>
+            <button class="btn-cantidad" data-action="increment">+</button>
+          </div>
+          
+          <button class="btn-agregar" data-producto='{"nombre":"Cupcakes de Frutas Frescas","precio":80,"categoria":"Cupcakes","tipo":"cupcakes"}'>
+            Agregar a carrito
+          </button>
+        </div>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Pastel de Vainilla">
+        </div>
+        <div class="producto-info">
+          <h3>Pastel de Vainilla</h3>
+          <p class="producto-descripcion">Pastel con decoración tres sabores</p>
+          <div class="producto-precio">$70</div>
+          <span class="producto-categoria">pasteles</span>
+          
+          <div class="cantidad-controls">
+            <button class="btn-cantidad" data-action="decrement">-</button>
+            <span class="cantidad">1</span>
+            <button class="btn-cantidad" data-action="increment">+</button>
+          </div>
+          
+          <button class="btn-agregar" data-producto='{"nombre":"Pastel de Vainilla","precio":70,"categoria":"pasteles","tipo":"pastel"}'>
+            Agregar a carrito
+          </button>
+        </div>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=692&q=80" alt="Cheesecake de Frambuesa">
+        </div>
+        <div class="producto-info">
+          <h3>Cheesecake de Frambuesa</h3>
+          <p class="producto-descripcion">Suave cheesecake con base de galleta y topping de frambuesa</p>
+          <div class="producto-precio">$60</div>
+          <span class="producto-categoria">postres</span>
+          
+          <div class="cantidad-controls">
+            <button class="btn-cantidad" data-action="decrement">-</button>
+            <span class="cantidad">1</span>
+            <button class="btn-cantidad" data-action="increment">+</button>
+          </div>
+          
+          <button class="btn-agregar" data-producto='{"nombre":"Cheesecake de Frambuesa","precio":60,"categoria":"postres","tipo":"cheesecake"}'>
+            Agregar a carrito
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de Personalización -->
+  <div id="modal-personalizar" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>¿Deseas personalizar tu pedido?</h3>
+      <p id="modal-producto-info"></p>
+      <div class="modal-buttons">
+        <button id="btn-personalizar-si" class="btn-modal btn-modal-si">Sí, personalizar</button>
+        <button id="btn-personalizar-no" class="btn-modal btn-modal-no">No, agregar tal cual</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-box">
+        <h4>Pastelería</h4>
+        <p>Los pasteles más deliciosos para tus momentos especiales.</p>
+      </div>
+      <div class="footer-box">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="../Perzonalizar_pedido/personalizar.html">Personalizar Pedido</a></li>
+          <li><a href="#">Eventos Empresariales</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <h4>Horarios</h4>
+        <p>Lun - Vie: 8:00 AM - 8:00 PM</p>
+        <p>Sábados: 9:00 AM - 9:00 PM</p>
+        <p>Domingos: 10:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+    <p class="copy">© 2025 Pastelería. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
