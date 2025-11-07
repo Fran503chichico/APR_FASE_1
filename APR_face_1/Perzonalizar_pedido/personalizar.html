@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar Pedido - Pastelería</title>
+    <link rel="stylesheet" href="css/personalizar.css">
+</head>
+<body>
+  <nav class="navbar">
+   <div class="logo">
+                  <img src="img/Imagen de WhatsApp 2025-10-01 a las 20.44.59_65d43f6a.jpg" alt="30px" width="50px">
+                 </div>
+   
+    <ul>
+      <li><a href="../Principal_Pasteleria/Principal_Pasteleria.php">Inicio</a></li>
+      <li><a href="../catalogo/catalogo.html">Catálogo</a></li>
+      <li><a href="../conctatos_pasteleria/Conctato_Pasteleria.html">Contacto</a></li>
+      <li><a href="../carro/carro.html">🧺 <span id="carrito-count" class="carrito-count">0</span></a></li>
+      <li><a href="../mi cuenta/mi-cuenta.php">👤</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header class="main-header">
+      <h1 id="titulo-producto">Personaliza tu Pedido</h1>
+      <p class="subtitle" id="subtitulo-producto">Diseña el producto perfecto para tu ocasión especial</p>
+    </header>
+
+    <form id="formulario-personalizar">
+      <!-- Información del Producto Base -->
+      <section class="producto-base-section">
+        <h2>Producto a Personalizar</h2>
+        <div id="info-producto-base" class="info-producto-base">
+          <!-- Se llena dinámicamente -->
+        </div>
+      </section>
+
+      <!-- Personalización -->
+      <section class="specs-section">
+        <h2>Tamaño</h2>
+        <div class="opciones-grid">
+          <div class="opcion-card">
+            <input type="radio" id="tamano-pequeno" name="tamano" value="pequeno" data-precio="0" checked>
+            <label for="tamano-pequeno">
+              <span class="opcion-titulo">Pequeño</span>
+              <span class="opcion-desc">Tamaño estándar</span>
+              <span class="opcion-precio">Incluido</span>
+            </label>
+          </div>
+          <div class="opcion-card">
+            <input type="radio" id="tamano-mediano" name="tamano" value="mediano" data-precio="50">
+            <label for="tamano-mediano">
+              <span class="opcion-titulo">Mediano</span>
+              <span class="opcion-desc">+30% tamaño</span>
+              <span class="opcion-precio">+$50</span>
+            </label>
+          </div>
+          <div class="opcion-card">
+            <input type="radio" id="tamano-grande" name="tamano" value="grande" data-precio="100">
+            <label for="tamano-grande">
+              <span class="opcion-titulo">Grande</span>
+              <span class="opcion-desc">+60% tamaño</span>
+              <span class="opcion-precio">+$100</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sabor -->
+      <section class="specs-section">
+        <h2>Sabores</h2>
+        <div class="opciones-grid">
+          <div class="opcion-card">
+            <input type="radio" id="sabor-chocolate" name="sabor" value="chocolate" data-precio="0" checked>
+            <label for="sabor-chocolate">
+              <span class="opcion-titulo">Chocolate</span>
+              <span class="opcion-desc">Rico y cremoso</span>
+            </label>
+          </div>
+          <div class="opcion-card">
+            <input type="radio" id="sabor-vainilla" name="sabor" value="vainilla" data-precio="0">
+            <label for="sabor-vainilla">
+              <span class="opcion-titulo">Vainilla</span>
+              <span class="opcion-desc">Clásico y suave</span>
+            </label>
+          </div>
+          <div class="opcion-card">
+            <input type="radio" id="sabor-fresa" name="sabor" value="fresa" data-precio="20">
+            <label for="sabor-fresa">
+              <span class="opcion-titulo">Fresa</span>
+              <span class="opcion-desc">Fresco y frutal</span>
+              <span class="opcion-precio">+$20</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Decoración -->
+      <section class="specs-section">
+        <h2>Decoración</h2>
+        <div class="opciones-grid">
+          <div class="opcion-card">
+            <input type="radio" id="decoracion-simple" name="decoracion" value="simple" data-precio="0" checked>
+            <label for="decoracion-simple">
+              <span class="opcion-titulo">Simple</span>
+              <span class="opcion-desc">Decoración básica</span>
+            </label>
+          </div>
+          <div class="opcion-card">
+            <input type="radio" id="decoracion-flores" name="decoracion" value="flores" data-precio="30">
+            <label for="decoracion-flores">
+              <span class="opcion-titulo">Flores</span>
+              <span class="opcion-precio">+$30</span>
+            </label>
+          </div>
+          <div class="opcion-card">
+            <input type="radio" id="decoracion-premium" name="decoracion" value="premium" data-precio="60">
+            <label for="decoracion-premium">
+              <span class="opcion-titulo">Premium</span>
+              <span class="opcion-precio">+$60</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mensaje Personalizado -->
+      <section class="specs-section">
+        <h2>Mensaje en el Producto</h2>
+        <div class="form-group">
+          <textarea id="mensaje" placeholder="Escribe tu mensaje personalizado (máx. 50 caracteres)" maxlength="50"></textarea>
+        </div>
+      </section>
+
+      <!-- Resumen y Precio -->
+      <section class="resumen-section">
+        <h2>Resumen de tu Pedido Personalizado</h2>
+        <div class="resumen-detalles">
+          <div class="resumen-item">
+            <span>Producto base:</span>
+            <span id="resumen-base">$0</span>
+          </div>
+          <div class="resumen-item">
+            <span>Personalización:</span>
+            <span id="resumen-personalizacion">$0</span>
+          </div>
+          <div class="resumen-total">
+            <span>Total:</span>
+            <span id="resumen-total">$0</span>
+          </div>
+        </div>
+      </section>
+
+      <center>
+        <button type="submit" class="btn-Carrito">Agregar al Carrito</button>
+      </center>
+    </form>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <h4>Pastelería</h4>
+          <p>Los pasteles más deliciosos para tus momentos especiales.</p>
+        </div>
+        <div class="footer-box">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="../catalogo/catalogo.html">Catálogo</a></li>
+            <li><a href="personalizar.html">Personalizar Pedido</a></li>
+            <li><a href="#">Eventos Empresariales</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h4>Horarios</h4>
+          <p>Lun - Vie: 8:00 AM - 8:00 PM</p>
+          <p>Sábados: 9:00 AM - 9:00 PM</p>
+          <p>Domingos: 10:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+      <p class="copy">© 2025 Pastelería. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="js/personalizar.js"></script>
+</body>
+</html>
